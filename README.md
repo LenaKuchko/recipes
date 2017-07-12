@@ -1,28 +1,67 @@
 # Recipes
 
+## Created by Lena Kuchko & Tyler Allen
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## User Story
 
-## Code scaffolding
+* As a user, I want to see a list of all recipes.
+* As a user, I want to click a recipe to see more details.
+* As a user, I'd like to know the details of a recipes before I decide whether to use it. Including things like a name, the recipe's creator, a description, ingredients, estimated cost, and nutrition facts.
+* As a user, I want to be able to filter recipes as I browse them. Perhaps by nutritional facts, ingredients, or cost.
+* As a user, I want to click a button or fill out a form to create a recipe.
+* As an administrator, I want to add, update, or delete recipes as necessary. (User authentication is not required).
+* As a user, I want to select a category to view a page containing all recipes in that category.
+* As a user, I want to "favorite" certain recipes, so I can refer back to them if I'd like.
+* As a user, I want to view my favorite recipes on a special page in the site.
+* As an administrator, I want to be able to select certain recipes to be "Featured". These will appear on a special page in the application.
+* As a user, I'd like to see a list of all recipes I've made.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
+## Specs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+| Objective | Implementation | Status |
+|:-------------:|:-------------:|:-------------:|
+| xxx | xxx | xxx |
+| xxx | xxx | xxx |
+| xxx | xxx | xxx |
+| xxx | xxx | xxx |
+| xxx | xxx | xxx |
+| xxx | xxx | xxx |
+| xxx | xxx | xxx |
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Setup/Installation Requirements
 
-## Running end-to-end tests
+  * Clone the repo
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+  * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  -- Code scaffolding
+
+  * Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+
+  -- Build
+
+  * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+
+## Bugs
+There are no known bugs at this time, but please contact the creator with questions or concerns regarding this application.
+
+
+## Technologies Used
+
+  * Angular2
+  * Firebase
+  * CSS
+  * Typescript
+  * Javascript
+
+
+## Licensing
+This application features MIT licensing.
+
+Copyright &copy; 2017 **Lena Kuchko & Tyler Allen** All Rights Reserved.
