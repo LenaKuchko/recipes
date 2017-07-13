@@ -1,0 +1,30 @@
+.head {
+  height: 50vh;
+  background-image: url("https://cdn.hellofresh.com/us/cms/lentil/delicious/HF_homepage_image_2017_2560x700_chicken_compressed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.recipeItems {
+  flex-basis: 35%;
+  margin: 5% 0;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.thumbnailWrapper {
+  width: 100%;
+}
+.thumbnailWrapper img {
+  height: inherit;
+  width: inherit;
+}

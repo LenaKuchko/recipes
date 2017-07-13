@@ -17,8 +17,8 @@ export class AddRecipeComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, author: string, description: string){
-    var newRecipe: Recipe = new Recipe(name, author, description);
+  submitForm(name: string, author: string, description: string, image: string){
+    var newRecipe: Recipe = new Recipe(name, author, description, image);
     this.recipeService.addRecipeToDB(newRecipe);
 
     this.router.navigate(['']);

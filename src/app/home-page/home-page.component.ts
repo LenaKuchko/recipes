@@ -17,8 +17,6 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit() {
     this.recipes = this.recipeService.getRecipes();
-    console.log(this.recipes);
-    console.log(typeof(this.recipes));
   }
   startAdding()
   {
@@ -27,7 +25,6 @@ export class HomePageComponent implements OnInit {
 
   goToRecipeDetailPage(clickedRecipe) {
    this.router.navigate(['recipes', clickedRecipe.$key]);
-   console.log(clickedRecipe.$key);
  };
 
 }

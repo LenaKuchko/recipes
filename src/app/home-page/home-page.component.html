@@ -1,10 +1,10 @@
-<!-- <button (click)="startAdding()"><a routerLink="add-recipe">Add new recipe</a></button>
-<div *ngIf="adding">
-  <add-recipe></add-recipe>
-</div> -->
-<div *ngFor="let recipe of recipes | async">
-  <h3 (click)="goToRecipeDetailPage(recipe)">{{recipe.name}}</h3>
-  <h3>{{recipe.author}}</h3>
-  <!-- <h3>{{recipe.description}}</h3> -->
-  <hr>
+<div class="head"></div>
+<div class="wrapper">
+  <div class="recipeItems" *ngFor="let recipe of recipes | async" (click)="goToRecipeDetailPage(recipe)">
+    <div class="thumbnailWrapper">
+      <img src="{{recipe.image}}" alt="">
+    </div>
+    <h3 >{{recipe.name}}</h3>
+    <h3>{{recipe.author}}</h3>
+  </div>
 </div>

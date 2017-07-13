@@ -1,0 +1,10 @@
+.imageWrapper {
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: inherit;
+  margin-top: -100px;
+}

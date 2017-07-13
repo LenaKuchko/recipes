@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e2e7b1 !important;
+}
+
+.btn {
+  background-color: #91c11e;
+}
+
+.panel-heading {
+  background-color: #91c11e;
+}
+
+.panel {
+  border: none !important;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, .5) !important;
+}
+
+.footer {
+  height: 200px;
+  background-image: url("https://cdn.hellofresh.com/us/cms/homepage/shop/HF-Shop-Homepage-Sub-2560x470_compressed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+}

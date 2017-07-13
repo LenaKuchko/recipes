@@ -28,7 +28,8 @@ export class RecipeService {
      var recipeEntryInDB = this.findRecipeDetail(recipeToUpdate.$key);
      recipeEntryInDB.update({name: recipeToUpdate.name,
                             author: recipeToUpdate.author,
-                            description: recipeToUpdate.description});
+                            description: recipeToUpdate.description,
+                            image: recipeToUpdate.image});
    }
 
    deleteRecipe(recipeToDelete){

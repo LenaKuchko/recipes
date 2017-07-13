@@ -1,27 +1,35 @@
-<div class="panel panel-default">
+<div class="panel">
   <div class="panel-heading">
     <h3 class="panel-title">Add New Recipe</h3>
   </div>
   <div class="panel-body">
     <div>
-      <div>
+      <div class="form-group">
         <label>Recipe Name:</label>
         <br>
-        <input #newName>
+        <input #newName class="form-control">
       </div>
 
-      <div>
+      <div class="form-group">
         <label>Recipe Author:</label>
         <br>
-        <input #newAuthor>
+        <input #newAuthor class="form-control">
       </div>
 
-      <div>
+      <div class="form-group">
         <label>Recipe Description:</label>
         <br>
-        <textarea #newDescription></textarea>
+        <textarea #newDescription class="form-control"></textarea>
       </div>
-      <button (click)="submitForm(newName.value, newAuthor.value, newDescription.value); newName.value=''; newAuthor.value=''; newDescription.value=''">Add</button>
+
+      <div class="form-group">
+        <label>Recipe Image:</label>
+        <br>
+        <input #newImage class="form-control">
+      </div>
+      <button (click)="submitForm(newName.value, newAuthor.value, newDescription.value, newImage.value); newName.value=''; newAuthor.value=''; newDescription.value=''; newImage.value=''" class="btn">Add</button>
     </div>
   </div>
 </div>
+
+<footer class="footer"></footer>

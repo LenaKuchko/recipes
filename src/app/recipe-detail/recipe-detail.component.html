@@ -1,10 +1,13 @@
 <div *ngIf="showProperties">
+  <div class="imageWrapper">
+    <img src="{{recipeToDisplay.image}}" alt="">
+  </div>
   <h3>{{(recipeToDisplay).name}}</h3>
   <h3>{{(recipeToDisplay).author}}</h3>
   <h3>{{(recipeToDisplay).description}}</h3>
-  <button (click)="editRecipe()">Edit</button>
+  <button (click)="editRecipe()" class="btn">Edit</button>
 </div>
 <div *ngIf="edit">
   <edit-recipe [selectedRecipe]="recipeToDisplay"></edit-recipe>
 </div>
-<button (click)="beginDeletingRecipe(recipeToDisplay)">Delete</button>
+<button (click)="beginDeletingRecipe(recipeToDisplay)" class="btn">Delete</button>
