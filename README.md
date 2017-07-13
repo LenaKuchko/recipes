@@ -8,9 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 * As a user, I want to see a list of all recipes.
 * As a user, I want to click a recipe to see more details.
-* As a user, I'd like to know the details of a recipes before I decide whether to use it. Including things like a name, the recipe's creator, a description, ingredients, estimated cost, and nutrition facts.
-* As a user, I want to be able to filter recipes as I browse them. Perhaps by nutritional facts, ingredients, or cost.
 * As a user, I want to click a button or fill out a form to create a recipe.
+* As a user, I want to be able to filter recipes as I browse them. Perhaps by nutritional facts, ingredients, or cost.
 * As an administrator, I want to add, update, or delete recipes as necessary. (User authentication is not required).
 * As a user, I want to select a category to view a page containing all recipes in that category.
 * As a user, I want to "favorite" certain recipes, so I can refer back to them if I'd like.

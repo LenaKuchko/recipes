@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Recipe</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Recipe Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Recipe Author:</label>
+        <br>
+        <input #newAuthor>
+      </div>
+
+      <div>
+        <label>Recipe Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newAuthor.value, newDescription.value); newName.value=''; newAuthor.value=''; newDescription.value=''">Add</button>
+    </div>
+  </div>
+</div>

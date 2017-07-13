@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Recipe</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Recipe Name:</label>
+        <br>
+        <input [(ngModel)]="selectedRecipe.name">
+      </div>
+
+      <div>
+        <label>Recipe Author:</label>
+        <br>
+        <input [(ngModel)]="selectedRecipe.author">
+      </div>
+
+      <div>
+        <label>Recipe Description:</label>
+        <br>
+        <textarea [(ngModel)]="selectedRecipe.description"></textarea>
+      </div>
+      <button (click)="beginUpdatingRecipe(selectedRecipe)">Update</button>
+    </div>
+  </div>
+</div>

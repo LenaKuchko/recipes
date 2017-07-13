@@ -9,6 +9,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
+import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -20,7 +23,10 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    AddRecipeComponent,
+    RecipeDetailComponent,
+    EditRecipeComponent
   ],
   imports: [
     BrowserModule,

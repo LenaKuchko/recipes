@@ -14,4 +14,26 @@ export class RecipeService {
    getRecipes(){
      return this.recipes;
    }
+
+   addRecipeToDB(newRecipe: Recipe)
+   {
+     this.recipes.push(newRecipe);
+   }
+
+   findRecipeDetail(key: string){
+     return this.database.object('recipes/' + key);
+   }
+
+   updateRecipe(recipeToUpdate){
+     var recipeEntryInDB = this.findRecipeDetail(recipeToUpdate.$key);
+     recipeEntryInDB.update({name: recipeToUpdate.name,
+                            author: recipeToUpdate.author,
+                            description: recipeToUpdate.description});
+   }
+
+   deleteRecipe(recipeToDelete){
+     var recipeEntryInDB = this.findRecipeDetail(recipeToDelete.$key);
+     console.log(recipeEntryInDB);
+     recipeEntryInDB.remove();
+   }
 }

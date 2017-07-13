@@ -1,0 +1,10 @@
+<div *ngIf="showProperties">
+  <h3>{{(recipeToDisplay).name}}</h3>
+  <h3>{{(recipeToDisplay).author}}</h3>
+  <h3>{{(recipeToDisplay).description}}</h3>
+  <button (click)="editRecipe()">Edit</button>
+</div>
+<div *ngIf="edit">
+  <edit-recipe [selectedRecipe]="recipeToDisplay"></edit-recipe>
+</div>
+<button (click)="beginDeletingRecipe(recipeToDisplay)">Delete</button>
